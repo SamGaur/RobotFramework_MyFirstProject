@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T00:36:56.174691" rpa="false" schemaversion="5">
-<suite id="s1" name="Tc 001 Start Close Browser" source="c:\Users\samgaur\Robot Framework Projects\My First Project\testcases\tc_001_start_close_browser.robot">
-<test id="s1-t1" name="TC_001 Browser Start Close" line="12">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T00:36:57.965063" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T00:36:57.956062" elapsed="13.759333"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T04:43:18.794682" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 1111 loop" source="c:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_1111_loop.robot">
+<test id="s1-t1" name="TC_1111 Variable loop testing" line="9">
+<kw name=": FOR">
+<msg time="2024-01-25T04:43:19.161113" level="FAIL">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</msg>
+<arg>${i}</arg>
+<arg>IN RANGE</arg>
+<arg>1</arg>
+<arg>10</arg>
+<status status="FAIL" start="2024-01-25T04:43:19.161113" elapsed="0.004002">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
 </kw>
-<status status="PASS" start="2024-01-25T00:36:57.943061" elapsed="13.776336"/>
+<kw name="\">
+<arg>log to Console</arg>
+<arg>${i}</arg>
+<status status="NOT RUN" start="2024-01-25T04:43:19.166114" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-25T04:43:19.160112" elapsed="0.006002">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
 </test>
-<status status="PASS" start="2024-01-25T00:36:56.211683" elapsed="15.517712"/>
+<status status="FAIL" start="2024-01-25T04:43:18.803098" elapsed="0.365015"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Tc 001 Start Close Browser">Tc 001 Start Close Browser</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 1111 loop">TC 1111 loop</stat>
 </suite>
 </statistics>
 <errors>

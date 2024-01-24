@@ -17,8 +17,7 @@ Robot First Test Case
     Open Browser  ${URL}  ${Browser}
     Maximize Browser Window
     #Set Selenium Speed    2seconds
-    Input Text    name:fld_username    TestingWorld
-    Input Text    xpath://input[@name='fld_email']    testingworldindia@gmail.com
+    Enter Username Password Email  TestingWorld  123456  testingworldindia@gmail.com
     Clear Element Text    name:fld_username
     Select Radio Button    add_type    office     
     Select From List By Index    name:sex  2
@@ -32,3 +31,12 @@ Robot First Test Case
     
 
     #Click Button    xpath://input[@type='submit']
+
+
+*** Keywords ***
+
+Enter Username Password Email
+    [Arguments]  ${username}  ${password}  ${email}
+    Input Text    name:fld_username  ${username}      
+    Input Password    name:fld_password  ${password}  
+    Input Text    xpath://input[@name='fld_email']  ${email}  

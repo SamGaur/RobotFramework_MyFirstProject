@@ -1,89 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T03:21:41.437236" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 001 Start Close Browser" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_001_Start_Close_Browser.robot">
-<test id="s1-t1" name="Robot First Test Case" line="16">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:42.250612" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
-<arg>${URL}</arg>
-<arg>${Browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T03:21:42.249607" elapsed="14.298323"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T04:50:10.736077" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 1111 loop" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_1111_loop.robot">
+<test id="s1-t1" name="TC_1111 Variable loop testing" line="9">
+<for flavor="IN RANGE">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.109068" elapsed="0.000000"/>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-25T03:21:56.553926" elapsed="0.132533"/>
+<var name="${i}">0</var>
+<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.001001"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:56.689460" level="INFO">Typing text 'TestingWorld' into text field 'name:fld_username'.</msg>
-<arg>name:fld_username</arg>
-<arg>TestingWorld</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T03:21:56.688458" elapsed="0.252575"/>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-01-25T04:50:11.109068" elapsed="0.000999"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:56.944027" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
-<arg>xpath://input[@name='fld_email']</arg>
-<arg>testingworldindia@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T03:21:56.944027" elapsed="0.242634"/>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.001000"/>
 </kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
-<arg>name:fld_username</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.188660" elapsed="0.094397"/>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
 </kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:57.286056" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
-<arg>add_type</arg>
-<arg>office</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.286056" elapsed="0.112617"/>
+<var name="${i}">4</var>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
 </kw>
-<kw name="Select From List By Index" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:57.401674" level="INFO">Selecting options from selection list 'name:sex' by index 2.</msg>
-<arg>name:sex</arg>
-<arg>2</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.400674" elapsed="0.202044"/>
+<var name="${i}">5</var>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.001000"/>
 </kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:57.604720" level="INFO">Selecting options from selection list 'name:sex' by value 1.</msg>
-<arg>name:sex</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.604720" elapsed="0.137638"/>
+<var name="${i}">6</var>
+<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.001000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
 </kw>
-<kw name="Select From List By Label" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:57.744360" level="INFO">Selecting options from selection list 'name:sex' by label Female.</msg>
-<arg>name:sex</arg>
-<arg>Female</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.743363" elapsed="0.116993"/>
+<var name="${i}">7</var>
+<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
 </kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:57.862361" level="INFO">Selecting checkbox 'terms'.</msg>
-<arg>terms</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T03:21:57.862361" elapsed="0.136112"/>
+<var name="${i}">8</var>
+<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.113067" elapsed="0.000000"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-01-25T03:21:58.000520" level="INFO">Clicking link 'xpath://a[text()='Read Detail']'.</msg>
-<arg>xpath://a[text()='Read Detail']</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T03:21:58.000520" elapsed="0.197483"/>
-</kw>
-<status status="PASS" start="2024-01-25T03:21:42.247607" elapsed="15.952387"/>
+<var name="${i}">9</var>
+<status status="PASS" start="2024-01-25T04:50:11.113067" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>0</value>
+<value>10</value>
+<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.005000"/>
+</for>
+<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.005000"/>
 </test>
-<status status="PASS" start="2024-01-25T03:21:41.443745" elapsed="16.759265"/>
+<test id="s1-t2" name="TC_1111 For Loop For all the values in list" line="15">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-01-25T04:50:11.115067" level="INFO">@{List} = [ Hey | there! | this | is | a | loop ]</msg>
+<var>@{List}</var>
+<arg>Hey</arg>
+<arg>there!</arg>
+<arg>this</arg>
+<arg>is</arg>
+<arg>a</arg>
+<arg>loop</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.114066" elapsed="0.001001"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000000"/>
+</kw>
+<var name="${i}">Hey</var>
+<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000999"/>
+</kw>
+<var name="${i}">there!</var>
+<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000999"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
+</kw>
+<var name="${i}">this</var>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
+</kw>
+<var name="${i}">is</var>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.001001"/>
+</kw>
+<var name="${i}">a</var>
+<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.001001"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-25T04:50:11.117067" elapsed="0.000000"/>
+</kw>
+<var name="${i}">loop</var>
+<status status="PASS" start="2024-01-25T04:50:11.117067" elapsed="0.000000"/>
+</iter>
+<var>${i}</var>
+<value>@{List}</value>
+<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.002000"/>
+</for>
+<status status="PASS" start="2024-01-25T04:50:11.114066" elapsed="0.003001"/>
+</test>
+<status status="PASS" start="2024-01-25T04:50:10.739077" elapsed="0.378989"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 001 Start Close Browser">TC 001 Start Close Browser</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC 1111 loop">TC 1111 loop</stat>
 </suite>
 </statistics>
 <errors>
