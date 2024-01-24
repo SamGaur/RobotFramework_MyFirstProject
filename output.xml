@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T00:36:56.174691" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc 001 Start Close Browser" source="c:\Users\samgaur\Robot Framework Projects\My First Project\testcases\tc_001_start_close_browser.robot">
+<test id="s1-t1" name="TC_001 Browser Start Close" line="12">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-25T00:36:57.965063" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-25T00:36:57.956062" elapsed="13.759333"/>
+</kw>
+<status status="PASS" start="2024-01-25T00:36:57.943061" elapsed="13.776336"/>
+</test>
+<status status="PASS" start="2024-01-25T00:36:56.211683" elapsed="15.517712"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tc 001 Start Close Browser">Tc 001 Start Close Browser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
