@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T00:41:04.914130" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T02:13:20.713385" rpa="false" schemaversion="5">
 <suite id="s1" name="TC 001 Start Close Browser" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_001_Start_Close_Browser.robot">
-<test id="s1-t1" name="TC_001 Browser Start Close" line="12">
+<test id="s1-t1" name="Robot First Test Case" line="16">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T00:41:05.792089" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
+<msg time="2024-01-25T02:13:21.113383" level="INFO">Opening browser 'Chrome' to base url 'http://www.thetestingworld.com/testings'.</msg>
 <arg>${URL}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T00:41:05.792089" elapsed="14.871080"/>
+<status status="PASS" start="2024-01-25T02:13:21.113383" elapsed="7.556549"/>
 </kw>
-<status status="PASS" start="2024-01-25T00:41:05.790092" elapsed="14.875085"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T02:13:28.670929" level="INFO">Typing text 'TestingWorld' into text field 'name:fld_username'.</msg>
+<arg>name:fld_username</arg>
+<arg>TestingWorld</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-25T02:13:28.670929" elapsed="0.094999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T02:13:28.766927" level="INFO">Typing text 'testingworldindia@gmail.com' into text field 'xpath://input[@name='fld_email']'.</msg>
+<arg>xpath://input[@name='fld_email']</arg>
+<arg>testingworldindia@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-25T02:13:28.766927" elapsed="0.079999"/>
+</kw>
+<status status="PASS" start="2024-01-25T02:13:21.065383" elapsed="7.782545"/>
 </test>
-<status status="PASS" start="2024-01-25T00:41:04.920132" elapsed="15.747035"/>
+<status status="PASS" start="2024-01-25T02:13:20.716385" elapsed="8.132541"/>
 </suite>
 <statistics>
 <total>

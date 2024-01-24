@@ -7,5 +7,5 @@ Library    SeleniumLibrary
 Successful login
     Open Browser    https://www.google.com/    gc 
 
-Input Text    APjFqb    Samiksha      
-Click Button    btnK            
+# Input Text    APjFqb    Samiksha      
+# Click Button    btnK            
