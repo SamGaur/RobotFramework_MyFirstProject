@@ -1,180 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T04:50:10.736077" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 1111 loop" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_1111_loop.robot">
-<test id="s1-t1" name="TC_1111 Variable loop testing" line="9">
-<for flavor="IN RANGE">
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.109068" elapsed="0.000000"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T05:07:11.835240" rpa="false" schemaversion="5">
+<suite id="s1" name="TC1110 Run Keyword" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC1110_Run Keyword.robot">
+<test id="s1-t1" name="TC_001 Run Variable Test" line="9">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-01-25T05:07:12.293573" level="INFO">${var1} = log to console</msg>
+<var>${var1}</var>
+<arg>log to console</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-01-25T05:07:12.293573" elapsed="0.000000"/>
 </kw>
-<var name="${i}">0</var>
-<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.001001"/>
-</iter>
-<iter>
+<kw name="Run Keyword" owner="BuiltIn">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
+<arg>test@gmail.com</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-25T05:07:12.294573" elapsed="0.000000"/>
 </kw>
-<var name="${i}">1</var>
-<status status="PASS" start="2024-01-25T04:50:11.109068" elapsed="0.000999"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
+<arg>${var1}</arg>
+<arg>test@gmail.com</arg>
+<doc>Executes the given keyword with the given arguments.</doc>
+<status status="PASS" start="2024-01-25T05:07:12.294573" elapsed="0.001012"/>
 </kw>
-<var name="${i}">2</var>
-<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.001000"/>
-</kw>
-<var name="${i}">3</var>
-<status status="PASS" start="2024-01-25T04:50:11.110067" elapsed="0.001000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">4</var>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">5</var>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.001000"/>
-</kw>
-<var name="${i}">6</var>
-<status status="PASS" start="2024-01-25T04:50:11.111067" elapsed="0.001000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">7</var>
-<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">8</var>
-<status status="PASS" start="2024-01-25T04:50:11.112067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.113067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">9</var>
-<status status="PASS" start="2024-01-25T04:50:11.113067" elapsed="0.000000"/>
-</iter>
-<var>${i}</var>
-<value>0</value>
-<value>10</value>
-<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.005000"/>
-</for>
-<status status="PASS" start="2024-01-25T04:50:11.108067" elapsed="0.005000"/>
+<status status="PASS" start="2024-01-25T05:07:12.292572" elapsed="0.003013"/>
 </test>
-<test id="s1-t2" name="TC_1111 For Loop For all the values in list" line="15">
-<kw name="Create List" owner="BuiltIn">
-<msg time="2024-01-25T04:50:11.115067" level="INFO">@{List} = [ Hey | there! | this | is | a | loop ]</msg>
-<var>@{List}</var>
-<arg>Hey</arg>
-<arg>there!</arg>
-<arg>this</arg>
-<arg>is</arg>
-<arg>a</arg>
-<arg>loop</arg>
-<doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.114066" elapsed="0.001001"/>
+<test id="s1-t2" name="TC_002 Run If Variable Test" line="13">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-01-25T05:07:12.296576" level="INFO">${var2} = NO</msg>
+<var>${var2}</var>
+<arg>NO</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-01-25T05:07:12.296576" elapsed="0.000000"/>
 </kw>
-<for flavor="IN">
-<iter>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>'${var2}'=='YES'</arg>
+<arg>Log To Console</arg>
+<arg>Value Found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-01-25T05:07:12.296576" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
+<arg>Value not found</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-25T05:07:12.297572" elapsed="0.000000"/>
 </kw>
-<var name="${i}">Hey</var>
-<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000999"/>
+<arg>'${var2}'=='NO'</arg>
+<arg>Log To Console</arg>
+<arg>Value not found</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-01-25T05:07:12.297572" elapsed="0.000000"/>
 </kw>
-<var name="${i}">there!</var>
-<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.000999"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
-</kw>
-<var name="${i}">this</var>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
-</kw>
-<var name="${i}">is</var>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.000000"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.001001"/>
-</kw>
-<var name="${i}">a</var>
-<status status="PASS" start="2024-01-25T04:50:11.116066" elapsed="0.001001"/>
-</iter>
-<iter>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${i}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T04:50:11.117067" elapsed="0.000000"/>
-</kw>
-<var name="${i}">loop</var>
-<status status="PASS" start="2024-01-25T04:50:11.117067" elapsed="0.000000"/>
-</iter>
-<var>${i}</var>
-<value>@{List}</value>
-<status status="PASS" start="2024-01-25T04:50:11.115067" elapsed="0.002000"/>
-</for>
-<status status="PASS" start="2024-01-25T04:50:11.114066" elapsed="0.003001"/>
+<status status="PASS" start="2024-01-25T05:07:12.295585" elapsed="0.001987"/>
 </test>
-<status status="PASS" start="2024-01-25T04:50:10.739077" elapsed="0.378989"/>
+<status status="PASS" start="2024-01-25T05:07:11.838241" elapsed="0.460342"/>
 </suite>
 <statistics>
 <total>
@@ -183,7 +60,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TC 1111 loop">TC 1111 loop</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="TC1110 Run Keyword">TC1110 Run Keyword</stat>
 </suite>
 </statistics>
 <errors>
