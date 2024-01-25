@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T16:17:04.698318" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 01 TakeScreenshot" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_01_TakeScreenshot.robot">
-<test id="s1-t1" name="TC_02 Take SS TestCase" line="11">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T18:07:17.160029" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 01 ExecuteJavaScript" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_01_ExecuteJavaScript.robot">
+<test id="s1-t1" name="TC_01_Execute_ScrollBar" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T16:17:05.140908" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg time="2024-01-25T18:07:17.962224" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/'.</msg>
 <arg>${URL}</arg>
-<arg>${Browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T16:17:05.139908" elapsed="8.676935"/>
+<status status="PASS" start="2024-01-25T18:07:17.962224" elapsed="16.785274"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-25T16:17:13.818841" elapsed="0.134458"/>
+<status status="PASS" start="2024-01-25T18:07:34.750498" elapsed="0.153537"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-25T16:17:13.955301" level="INFO">Typing text 'Test' into text field 'name:fld_username'.</msg>
-<arg>name:fld_username</arg>
-<arg>Test</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T16:17:13.954303" elapsed="0.131785"/>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-01-25T18:07:34.909037" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(), 'TRAINING')]'.</msg>
+<arg>xpath://span[contains(text(), 'TRAINING')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-01-25T18:07:34.907036" elapsed="0.333000"/>
 </kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-01-25T16:17:14.089085" level="INFO">Typing password into text field 'name:fld_password'.</msg>
-<msg time="2024-01-25T16:17:14.135090" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name:fld_password</arg>
-<arg>password</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-25T16:17:14.088084" elapsed="0.100998"/>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2024-01-25T18:07:35.242039" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(), 'ONLINE TRAINING')]'.</msg>
+<arg>xpath://span[contains(text(), 'ONLINE TRAINING')]</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2024-01-25T18:07:35.242039" elapsed="0.327405"/>
 </kw>
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-01-25T16:17:14.440627" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Snapshots/TC_SS1.png"&gt;&lt;img src="Snapshots/TC_SS1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<arg>./Snapshots/TC_SS1.png</arg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-01-25T16:17:14.190081" elapsed="0.250546"/>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-01-25T18:07:45.572907" level="INFO">Slept 10 seconds.</msg>
+<arg>10seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-01-25T18:07:35.571442" elapsed="10.001465"/>
 </kw>
-<status status="PASS" start="2024-01-25T16:17:05.136909" elapsed="9.304715"/>
+<status status="PASS" start="2024-01-25T18:07:17.938170" elapsed="27.638727"/>
 </test>
-<status status="PASS" start="2024-01-25T16:17:04.703848" elapsed="9.739778"/>
+<status status="PASS" start="2024-01-25T18:07:17.166031" elapsed="28.413867"/>
 </suite>
 <statistics>
 <total>
@@ -45,7 +42,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 TakeScreenshot">TC 01 TakeScreenshot</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 ExecuteJavaScript">TC 01 ExecuteJavaScript</stat>
 </suite>
 </statistics>
 <errors>
