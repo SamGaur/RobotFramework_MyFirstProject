@@ -1,67 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T12:24:38.070344" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 001 ImplicitWait" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_001_ImplicitWait.robot">
-<test id="s1-t1" name="TC_001 Implicit Wait Test" line="11">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T16:17:04.698318" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 01 TakeScreenshot" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_01_TakeScreenshot.robot">
+<test id="s1-t1" name="TC_02 Take SS TestCase" line="11">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T12:24:38.402344" level="INFO">Opening browser 'http://www.thetestingworld.com/testings' to base url 'Chrome'.</msg>
-<msg time="2024-01-25T12:24:38.402344" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<msg time="2024-01-25T12:24:38.402344" level="FAIL">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</msg>
-<arg>${Browser}</arg>
+<msg time="2024-01-25T16:17:05.140908" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
 <arg>${URL}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="FAIL" start="2024-01-25T12:24:38.401344" elapsed="0.004999">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</status>
+<status status="PASS" start="2024-01-25T16:17:05.139908" elapsed="8.676935"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.406343" elapsed="0.000000"/>
-</kw>
-<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
-<var>${default_T}</var>
-<doc>Gets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.406343" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${default_T}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.407344" elapsed="0.000000"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>20 seconds</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.407344" elapsed="0.000000"/>
-</kw>
-<kw name="${default_T}= get selenium Implicit wait">
-<status status="NOT RUN" start="2024-01-25T12:24:38.409343" elapsed="0.000000"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${default_T}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.409343" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-25T16:17:13.818841" elapsed="0.134458"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-25T16:17:13.955301" level="INFO">Typing text 'Test' into text field 'name:fld_username'.</msg>
 <arg>name:fld_username</arg>
-<arg>Testing</arg>
+<arg>Test</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.410342" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-25T16:17:13.954303" elapsed="0.131785"/>
 </kw>
 <kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-01-25T16:17:14.089085" level="INFO">Typing password into text field 'name:fld_password'.</msg>
+<msg time="2024-01-25T16:17:14.135090" level="INFO">Temporally setting log level to: NONE</msg>
 <arg>name:fld_password</arg>
 <arg>password</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-01-25T12:24:38.410342" elapsed="0.000000"/>
+<status status="PASS" start="2024-01-25T16:17:14.088084" elapsed="0.100998"/>
 </kw>
-<status status="FAIL" start="2024-01-25T12:24:38.398342" elapsed="0.012000">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</status>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-01-25T16:17:14.440627" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="Snapshots/TC_SS1.png"&gt;&lt;img src="Snapshots/TC_SS1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>./Snapshots/TC_SS1.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-01-25T16:17:14.190081" elapsed="0.250546"/>
+</kw>
+<status status="PASS" start="2024-01-25T16:17:05.136909" elapsed="9.304715"/>
 </test>
-<status status="FAIL" start="2024-01-25T12:24:38.072343" elapsed="0.339000"/>
+<status status="PASS" start="2024-01-25T16:17:04.703848" elapsed="9.739778"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TC 001 ImplicitWait">TC 001 ImplicitWait</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 TakeScreenshot">TC 01 TakeScreenshot</stat>
 </suite>
 </statistics>
 <errors>
