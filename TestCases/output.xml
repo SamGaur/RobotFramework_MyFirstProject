@@ -1,39 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T18:07:17.160029" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T18:50:14.385417" rpa="false" schemaversion="5">
 <suite id="s1" name="TC 01 ExecuteJavaScript" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_01_ExecuteJavaScript.robot">
-<test id="s1-t1" name="TC_01_Execute_ScrollBar" line="9">
+<test id="s1-t1" name="TC_02_Login" line="22">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:07:17.962224" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/'.</msg>
-<arg>${URL}</arg>
+<msg time="2024-01-25T18:50:14.736314" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>${URL2}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T18:07:17.962224" elapsed="16.785274"/>
+<status status="PASS" start="2024-01-25T18:50:14.735315" elapsed="7.355396"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-25T18:07:34.750498" elapsed="0.153537"/>
+<status status="PASS" start="2024-01-25T18:50:22.092713" elapsed="0.121964"/>
 </kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:07:34.909037" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(), 'TRAINING')]'.</msg>
-<arg>xpath://span[contains(text(), 'TRAINING')]</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-01-25T18:07:34.907036" elapsed="0.333000"/>
-</kw>
-<kw name="Mouse Over" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:07:35.242039" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(), 'ONLINE TRAINING')]'.</msg>
-<arg>xpath://span[contains(text(), 'ONLINE TRAINING')]</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<status status="PASS" start="2024-01-25T18:07:35.242039" elapsed="0.327405"/>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>1minutes</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-01-25T18:50:22.215676" elapsed="0.000999"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-25T18:07:45.572907" level="INFO">Slept 10 seconds.</msg>
+<msg time="2024-01-25T18:50:32.217747" level="INFO">Slept 10 seconds.</msg>
 <arg>10seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-25T18:07:35.571442" elapsed="10.001465"/>
+<status status="PASS" start="2024-01-25T18:50:22.217674" elapsed="10.000073"/>
 </kw>
-<status status="PASS" start="2024-01-25T18:07:17.938170" elapsed="27.638727"/>
+<kw name="Press Key" owner="SeleniumLibrary">
+<msg time="2024-01-25T18:50:32.219748" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<arg>name:email</arg>
+<arg>samikshagaur</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<status status="PASS" start="2024-01-25T18:50:32.219748" elapsed="0.055985"/>
+</kw>
+<kw name="Press Key" owner="SeleniumLibrary">
+<msg time="2024-01-25T18:50:32.277732" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<arg>name:pass</arg>
+<arg>samikshagaur</arg>
+<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
+<status status="PASS" start="2024-01-25T18:50:32.276733" elapsed="0.115965"/>
+</kw>
+<status status="PASS" start="2024-01-25T18:50:14.732315" elapsed="17.661382"/>
 </test>
-<status status="PASS" start="2024-01-25T18:07:17.166031" elapsed="28.413867"/>
+<status status="PASS" start="2024-01-25T18:50:14.388416" elapsed="18.007281"/>
 </suite>
 <statistics>
 <total>
@@ -46,5 +53,7 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-01-25T18:50:32.219748" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
+<msg time="2024-01-25T18:50:32.277732" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>
