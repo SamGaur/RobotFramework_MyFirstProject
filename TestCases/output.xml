@@ -1,66 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T05:07:11.835240" rpa="false" schemaversion="5">
-<suite id="s1" name="TC1110 Run Keyword" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC1110_Run Keyword.robot">
-<test id="s1-t1" name="TC_001 Run Variable Test" line="9">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T05:07:12.293573" level="INFO">${var1} = log to console</msg>
-<var>${var1}</var>
-<arg>log to console</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.293573" elapsed="0.000000"/>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T12:24:38.070344" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 001 ImplicitWait" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_001_ImplicitWait.robot">
+<test id="s1-t1" name="TC_001 Implicit Wait Test" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-25T12:24:38.402344" level="INFO">Opening browser 'http://www.thetestingworld.com/testings' to base url 'Chrome'.</msg>
+<msg time="2024-01-25T12:24:38.402344" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-01-25T12:24:38.402344" level="FAIL">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</msg>
+<arg>${Browser}</arg>
+<arg>${URL}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-01-25T12:24:38.401344" elapsed="0.004999">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</status>
 </kw>
-<kw name="Run Keyword" owner="BuiltIn">
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2024-01-25T12:24:38.406343" elapsed="0.000000"/>
+</kw>
+<kw name="Get Selenium Implicit Wait" owner="SeleniumLibrary">
+<var>${default_T}</var>
+<doc>Gets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-01-25T12:24:38.406343" elapsed="0.000000"/>
+</kw>
 <kw name="Log To Console" owner="BuiltIn">
-<arg>test@gmail.com</arg>
+<arg>${default_T}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.294573" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-25T12:24:38.407344" elapsed="0.000000"/>
 </kw>
-<arg>${var1}</arg>
-<arg>test@gmail.com</arg>
-<doc>Executes the given keyword with the given arguments.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.294573" elapsed="0.001012"/>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>20 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="NOT RUN" start="2024-01-25T12:24:38.407344" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-01-25T05:07:12.292572" elapsed="0.003013"/>
-</test>
-<test id="s1-t2" name="TC_002 Run If Variable Test" line="13">
-<kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-01-25T05:07:12.296576" level="INFO">${var2} = NO</msg>
-<var>${var2}</var>
-<arg>NO</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.296576" elapsed="0.000000"/>
+<kw name="${default_T}= get selenium Implicit wait">
+<status status="NOT RUN" start="2024-01-25T12:24:38.409343" elapsed="0.000000"/>
 </kw>
-<kw name="Run Keyword If" owner="BuiltIn">
-<arg>'${var2}'=='YES'</arg>
-<arg>Log To Console</arg>
-<arg>Value Found</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.296576" elapsed="0.000000"/>
-</kw>
-<kw name="Run Keyword If" owner="BuiltIn">
 <kw name="Log To Console" owner="BuiltIn">
-<arg>Value not found</arg>
+<arg>${default_T}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.297572" elapsed="0.000000"/>
+<status status="NOT RUN" start="2024-01-25T12:24:38.409343" elapsed="0.000000"/>
 </kw>
-<arg>'${var2}'=='NO'</arg>
-<arg>Log To Console</arg>
-<arg>Value not found</arg>
-<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<status status="PASS" start="2024-01-25T05:07:12.297572" elapsed="0.000000"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>name:fld_username</arg>
+<arg>Testing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-25T12:24:38.410342" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-01-25T05:07:12.295585" elapsed="0.001987"/>
+<kw name="Input Password" owner="SeleniumLibrary">
+<arg>name:fld_password</arg>
+<arg>password</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-01-25T12:24:38.410342" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-01-25T12:24:38.398342" elapsed="0.012000">ValueError: http://www.thetestingworld.com/testings is not a supported browser.</status>
 </test>
-<status status="PASS" start="2024-01-25T05:07:11.838241" elapsed="0.460342"/>
+<status status="FAIL" start="2024-01-25T12:24:38.072343" elapsed="0.339000"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="2" fail="0" skip="0" id="s1" name="TC1110 Run Keyword">TC1110 Run Keyword</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC 001 ImplicitWait">TC 001 ImplicitWait</stat>
 </suite>
 </statistics>
 <errors>
