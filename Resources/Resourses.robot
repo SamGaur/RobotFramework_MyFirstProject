@@ -2,8 +2,8 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-# ${Browser}  Chrome
-# ${URLTEST}  https://www.thetestingworld.com/testings/
+${Browser}  Chrome
+${URLTEST}  https://www.thetestingworld.com/testings/
 
 
 *** Keywords ***

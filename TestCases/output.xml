@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T23:41:40.663740" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-27T01:18:10.695598" rpa="false" schemaversion="5">
 <suite id="s1" name="Startclosebro" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\Startclosebro.robot">
-<test id="s1-t1" name="Robot First Test Case" line="9">
+<test id="s1-t1" name="Robot First Test Case" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-26T23:41:41.550694" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<msg time="2024-01-27T01:18:11.673157" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
 <arg>${URLTEST}</arg>
 <arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-26T23:41:41.550694" elapsed="35.716436"/>
+<status status="PASS" start="2024-01-27T01:18:11.672172" elapsed="17.623985"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-26T23:42:17.271128" elapsed="0.140061"/>
+<status status="PASS" start="2024-01-27T01:18:29.297164" elapsed="0.139706"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-26T23:42:17.414196" level="INFO">Typing text 'Samiksha' into text field 'name:fld_username'.</msg>
+<msg time="2024-01-27T01:18:29.438869" level="INFO">Typing text 'Samiksha' into text field 'name:fld_username'.</msg>
 <arg>name:fld_username</arg>
 <arg>Samiksha</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T23:42:17.413198" elapsed="0.235728"/>
+<status status="PASS" start="2024-01-27T01:18:29.437868" elapsed="0.214294"/>
 </kw>
-<status status="PASS" start="2024-01-26T23:41:41.545694" elapsed="36.104232"/>
+<status status="PASS" start="2024-01-27T01:18:11.670179" elapsed="17.984525"/>
 </test>
-<status status="PASS" start="2024-01-26T23:41:40.670738" elapsed="36.982187"/>
+<doc>This is an Open and Input Text Test case.</doc>
+<status status="PASS" start="2024-01-27T01:18:10.702596" elapsed="18.955106"/>
 </suite>
 <statistics>
 <total>
@@ -35,5 +36,6 @@
 </suite>
 </statistics>
 <errors>
+<msg time="2024-01-27T01:18:11.662160" level="WARN">Error in file 'C:\Users\samgaur\Robot Framework Projects\My First Project\Resources\Resourses.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>

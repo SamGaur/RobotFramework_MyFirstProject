@@ -1,4 +1,5 @@
 *** Settings ***
+Documentation    This is an Open and Input Text Test case.
 Library  SeleniumLibrary
 Resource  ../Resources/Resourses.robot
 

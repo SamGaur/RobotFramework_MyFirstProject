@@ -1,6 +1,6 @@
 *** Settings ***
 Library  SeleniumLibrary
-Resource  ../Resources/Resourses.robot
+Resource  ../Resources/Resourses.robot 
 
 *** Variables ***
 ${Browser}  Chrome
