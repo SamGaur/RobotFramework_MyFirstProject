@@ -13,7 +13,7 @@ Open Browser  ${URL1}  ${BROWSER}
 Go To    ${URL2} 
 #${URL11} =    Get Location
 #Log To Console    ${URL11}
-Go Back
+#Go Back
 #${URL22} =    Get Location
 #Log To Console    ${URL22}
 
