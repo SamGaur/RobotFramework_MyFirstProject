@@ -1,23 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T18:02:27.042760" rpa="false" schemaversion="5">
-<suite id="s1" name="ValidationsPageShould and notcontains" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\ValidationsPageShould_and_notcontains.robot">
-<test id="s1-t1" name="Pageshouldcontains_TestCase" line="10">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T21:29:51.869483" rpa="false" schemaversion="5">
+<suite id="s1" name="Element" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\Element.robot">
+<test id="s1-t1" name="TestCaseElementLocatorTC" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-26T18:02:27.474212" level="INFO">Opening browser 'Chrome' to base url 'https://ultimateqa.com/'.</msg>
+<msg time="2024-01-26T21:29:52.235384" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/text-box'.</msg>
 <arg>${URL}</arg>
-<arg>${Browser}</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-26T18:02:27.474212" elapsed="17.706113"/>
+<status status="PASS" start="2024-01-26T21:29:52.235384" elapsed="12.843410"/>
 </kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-01-26T18:02:45.197325" level="INFO">Current page contains text 'Push Higher Quality Software To Market Faster'.</msg>
-<arg>Push Higher Quality Software To Market Faster</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-01-26T18:02:45.181326" elapsed="0.016996"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-26T21:30:05.082796" elapsed="0.138991"/>
 </kw>
-<status status="PASS" start="2024-01-26T18:02:27.472211" elapsed="17.726111"/>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>2seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-01-26T21:30:05.224778" elapsed="0.002007"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-26T21:30:05.229777" level="INFO">Clicking element '//*[@id="userName"]'.</msg>
+<arg>//*[@id="userName"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T21:30:05.228777" elapsed="4.159423"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-26T21:30:09.390215" level="INFO">Typing text 'Samiksha' into text field '//*[@id="userName"]'.</msg>
+<arg>//*[@id="userName"]</arg>
+<arg>Samiksha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T21:30:09.389206" elapsed="6.165479"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-26T21:30:15.557682" level="INFO">Clicking element '//*[@id='item-1']'.</msg>
+<arg>//*[@id='item-1']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T21:30:15.557682" elapsed="4.123782"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-26T21:30:19.684466" level="INFO">Clicking element '//*[@class='rct-icon rct-icon-uncheck']'.</msg>
+<arg>//*[@class='rct-icon rct-icon-uncheck']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T21:30:19.684466" elapsed="4.105322"/>
+</kw>
+<status status="PASS" start="2024-01-26T21:29:52.232385" elapsed="31.559405"/>
 </test>
-<status status="PASS" start="2024-01-26T18:02:27.045762" elapsed="18.153559"/>
+<status status="PASS" start="2024-01-26T21:29:51.872482" elapsed="31.922306"/>
 </suite>
 <statistics>
 <total>
@@ -26,7 +54,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="ValidationsPageShould and notcontains">ValidationsPageShould and notcontains</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Element">Element</stat>
 </suite>
 </statistics>
 <errors>
