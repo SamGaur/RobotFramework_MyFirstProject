@@ -1,0 +1,16 @@
+1706306711969	geckodriver	INFO	Listening on 127.0.0.1:56545
+1706306712524	mozrunner::runner	INFO	Running command: "C:\\Users\\samgaur\\AppData\\Local\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port"  ...  "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\samgaur\\AppData\\Local\\Temp\\rust_mozprofileZWM8MW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1706306714418	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1706306715104	Marionette	INFO	Listening on port 56580
+Read port: 56580
+WebDriver BiDi listening on ws://127.0.0.1:56546
+1706306715395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:56546/devtools/browser/9031f5c7-db5d-4025-908d-9763d208295b
+1706306744651	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: Policies.jsm: 
+  Download failed - ERROR_NETWORK_FAILURE - https://ffextension.nexthink.com/nexthink-latest-an-fx.xpi
+1706306792093	Marionette	INFO	Stopped listening on port 56580
+Dynamically enable window occlusion 1

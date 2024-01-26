@@ -1,41 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-27T01:18:10.695598" rpa="false" schemaversion="5">
-<suite id="s1" name="Startclosebro" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\Startclosebro.robot">
-<test id="s1-t1" name="Robot First Test Case" line="10">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-27T04:05:10.178888" rpa="false" schemaversion="5">
+<suite id="s1" name="TC02" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC02.robot">
+<test id="s1-t1" name="TC01_TestCase" line="15">
+<kw name="Start Browser and Maximize" owner="Res1" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-27T01:18:11.673157" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
-<arg>${URLTEST}</arg>
-<arg>${Browser}</arg>
+<msg time="2024-01-27T04:05:11.174381" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>https://www.thetestingworld.com/testings/</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-27T01:18:11.672172" elapsed="17.623985"/>
+<status status="PASS" start="2024-01-27T04:05:11.174381" elapsed="14.259169"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-27T01:18:29.297164" elapsed="0.139706"/>
+<status status="PASS" start="2024-01-27T04:05:25.433550" elapsed="0.156277"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:11.172369" elapsed="14.417458"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-27T01:18:29.438869" level="INFO">Typing text 'Samiksha' into text field 'name:fld_username'.</msg>
+<msg time="2024-01-27T04:05:25.592822" level="INFO">Typing text 'Samiksha' into text field 'name:fld_username'.</msg>
 <arg>name:fld_username</arg>
 <arg>Samiksha</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-27T01:18:29.437868" elapsed="0.214294"/>
+<status status="PASS" start="2024-01-27T04:05:25.591845" elapsed="0.259640"/>
 </kw>
-<status status="PASS" start="2024-01-27T01:18:11.670179" elapsed="17.984525"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:25.853486" level="INFO">Typing text 'testing@email.com' into text field 'name:fld_email'.</msg>
+<arg>name:fld_email</arg>
+<arg>testing@email.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:05:25.853486" elapsed="0.187979"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:26.044470" level="INFO">Typing password into text field 'name:fld_password'.</msg>
+<msg time="2024-01-27T04:05:26.117489" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name:fld_password</arg>
+<arg>password</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:05:26.043470" elapsed="0.168019"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:26.213471" level="INFO">Typing password into text field 'fld_cpassword'.</msg>
+<msg time="2024-01-27T04:05:26.281469" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>fld_cpassword</arg>
+<arg>password</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:05:26.213471" elapsed="0.168997"/>
+</kw>
+<kw name="Close Browser Window" owner="Res1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:26.397466" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-01-27T04:05:26.385488" elapsed="0.011978"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-01-27T04:05:26.397466" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-01-27T04:05:26.397466" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-27T04:05:26.398464" elapsed="2.446496"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:26.384467" elapsed="2.460493"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:11.171366" elapsed="17.675588"/>
 </test>
-<doc>This is an Open and Input Text Test case.</doc>
-<status status="PASS" start="2024-01-27T01:18:10.702596" elapsed="18.955106"/>
+<test id="s1-t2" name="TC02_TestCase" line="21">
+<kw name="Start Browser and Maximize" owner="Res1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:28.851974" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>https://www.thetestingworld.com/testings/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-27T04:05:28.851974" elapsed="13.336222"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.188196" elapsed="0.144501"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:28.850958" elapsed="13.481739"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:42.334707" level="INFO">Selecting 'home' from radio button 'add_type'.</msg>
+<arg>add_type</arg>
+<arg>home</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.333697" elapsed="0.157239"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:42.492937" level="INFO">Selecting 'office' from radio button 'add_type'.</msg>
+<arg>add_type</arg>
+<arg>office</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.492937" elapsed="0.091754"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:42.586696" level="INFO">Clicking element 'name:sex'.</msg>
+<arg>name:sex</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.586696" elapsed="0.121995"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:42.711692" level="INFO">Selecting options from selection list 'name:sex' by value 2.</msg>
+<arg>name:sex</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.710710" elapsed="0.151925"/>
+</kw>
+<kw name="Close Browser Window" owner="Res1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:42.874635" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.865635" elapsed="0.009000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-01-27T04:05:42.875635" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.875635" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-27T04:05:42.875635" elapsed="2.441110"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:42.864635" elapsed="2.453140"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:28.849976" elapsed="16.469389"/>
+</test>
+<test id="s1-t3" name="TC03_TestCase" line="27">
+<kw name="Start Browser and Maximize" owner="Res1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:45.324048" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>https://www.thetestingworld.com/testings/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-27T04:05:45.324048" elapsed="13.514830"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-27T04:05:58.839884" elapsed="0.144980"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:45.323066" elapsed="13.661798"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:58.986864" level="INFO">Clicking element '//input[@id='datepicker']'.</msg>
+<arg>//input[@id='datepicker']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:05:58.986864" elapsed="0.243861"/>
+</kw>
+<kw name="Close Browser Window" owner="Res1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:05:59.245725" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-01-27T04:05:59.235724" elapsed="0.010001"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-01-27T04:05:59.246727" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-01-27T04:05:59.246727" elapsed="0.000998"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-27T04:05:59.247725" elapsed="2.479556"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:59.234728" elapsed="2.492553"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:05:45.322047" elapsed="16.407233"/>
+</test>
+<test id="s1-t4" name="TC04_TestCase" line="33">
+<kw name="Start Browser and Maximize" owner="Res1" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:06:01.735277" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/testings/'.</msg>
+<arg>https://www.thetestingworld.com/testings/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-27T04:06:01.735277" elapsed="12.091249"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-27T04:06:13.826526" elapsed="1.029744"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:06:01.734298" elapsed="13.121972"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:06:14.858347" level="INFO">Selecting checkbox 'terms'.</msg>
+<arg>terms</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:06:14.858347" elapsed="0.145976"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:06:15.008326" level="INFO">Clicking link 'xpath://a[text()='Read Detail']'.</msg>
+<arg>xpath://a[text()='Read Detail']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-27T04:06:15.008326" elapsed="0.190000"/>
+</kw>
+<kw name="Close Browser Window" owner="Res1" type="TEARDOWN">
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-01-27T04:06:15.212403" level="INFO">${Title} = Login &amp; Sign Up Forms</msg>
+<var>${Title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-01-27T04:06:15.201322" elapsed="0.011081"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-01-27T04:06:15.213375" level="INFO">Login &amp; Sign Up Forms</msg>
+<arg>${Title}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-01-27T04:06:15.213375" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-01-27T04:06:15.213375" elapsed="2.437503"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:06:15.201322" elapsed="2.449556"/>
+</kw>
+<status status="PASS" start="2024-01-27T04:06:01.733282" elapsed="15.919597"/>
+</test>
+<doc>Running Two Test Cases at the same time.</doc>
+<status status="PASS" start="2024-01-27T04:05:10.185899" elapsed="67.469453"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Startclosebro">Startclosebro</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="TC02">TC02</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-01-27T01:18:11.662160" level="WARN">Error in file 'C:\Users\samgaur\Robot Framework Projects\My First Project\Resources\Resourses.robot' on line 16: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
 </errors>
 </robot>
