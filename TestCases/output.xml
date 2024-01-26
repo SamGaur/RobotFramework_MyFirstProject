@@ -1,46 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T18:50:14.385417" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 01 ExecuteJavaScript" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_01_ExecuteJavaScript.robot">
-<test id="s1-t1" name="TC_02_Login" line="22">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T01:51:32.589694" rpa="false" schemaversion="5">
+<suite id="s1" name="MultiWindowHandling" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\MultiWindowHandling.robot">
+<test id="s1-t1" name="MultiWindowsHandling Functionality" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:50:14.736314" level="INFO">Opening browser 'Chrome' to base url 'https://www.facebook.com/'.</msg>
-<arg>${URL2}</arg>
+<msg time="2024-01-26T01:51:32.975673" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/'.</msg>
+<arg>${URL1}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-25T18:50:14.735315" elapsed="7.355396"/>
+<status status="PASS" start="2024-01-26T01:51:32.974672" elapsed="15.662744"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-25T18:50:22.092713" elapsed="0.121964"/>
+<status status="PASS" start="2024-01-26T01:51:48.639416" elapsed="0.129000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-26T01:51:48.770404" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com/'.</msg>
+<arg>${URL2}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-26T01:51:48.769405" elapsed="8.394986"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.165390" elapsed="0.000000"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-01-26T01:51:57.170390" level="INFO">${URL1} = https://www.thetestingworld.com/</msg>
+<var>${URL1}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.165390" elapsed="0.005000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${URL1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.170390" elapsed="0.000000"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>2</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.171389" elapsed="0.000000"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-01-26T01:51:57.177392" level="INFO">${URL2} = https://www.google.com/</msg>
+<var>${URL2}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.171389" elapsed="0.006003"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${URL2}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.177392" elapsed="0.000998"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>10</arg>
+<arg>10</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.179389" elapsed="0.112868"/>
+</kw>
+<kw name="Switch Browser" owner="SeleniumLibrary">
+<arg>1</arg>
+<doc>Switches between active browsers using ``index_or_alias``.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.293261" elapsed="0.000996"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-26T01:51:57.295256" level="INFO">Clicking element '//span[@class='menu-title' and text()='Contact Us']'.</msg>
+<arg>//span[@class='menu-title' and text()='Contact Us']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-01-26T01:51:57.294257" elapsed="2.650377"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>1minutes</arg>
+<arg>20seconds</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-01-25T18:50:22.215676" elapsed="0.000999"/>
+<status status="PASS" start="2024-01-26T01:51:59.946636" elapsed="0.001995"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-01-25T18:50:32.217747" level="INFO">Slept 10 seconds.</msg>
-<arg>10seconds</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-01-25T18:50:22.217674" elapsed="10.000073"/>
-</kw>
-<kw name="Press Key" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:50:32.219748" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<arg>name:email</arg>
-<arg>samikshagaur</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<status status="PASS" start="2024-01-25T18:50:32.219748" elapsed="0.055985"/>
-</kw>
-<kw name="Press Key" owner="SeleniumLibrary">
-<msg time="2024-01-25T18:50:32.277732" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<arg>name:pass</arg>
-<arg>samikshagaur</arg>
-<doc>*DEPRECATED in SeleniumLibrary 4.0.* use `Press Keys` instead.</doc>
-<status status="PASS" start="2024-01-25T18:50:32.276733" elapsed="0.115965"/>
-</kw>
-<status status="PASS" start="2024-01-25T18:50:14.732315" elapsed="17.661382"/>
+<status status="PASS" start="2024-01-26T01:51:32.971678" elapsed="26.976953"/>
 </test>
-<status status="PASS" start="2024-01-25T18:50:14.388416" elapsed="18.007281"/>
+<status status="PASS" start="2024-01-26T01:51:32.592691" elapsed="27.356938"/>
 </suite>
 <statistics>
 <total>
@@ -49,11 +85,9 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="TC 01 ExecuteJavaScript">TC 01 ExecuteJavaScript</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="MultiWindowHandling">MultiWindowHandling</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2024-01-25T18:50:32.219748" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
-<msg time="2024-01-25T18:50:32.277732" level="WARN">Keyword 'SeleniumLibrary.Press Key' is deprecated. use `Press Keys` instead.</msg>
 </errors>
 </robot>

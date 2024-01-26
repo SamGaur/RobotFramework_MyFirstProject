@@ -1,23 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-25T04:43:18.794682" rpa="false" schemaversion="5">
-<suite id="s1" name="TC 1111 loop" source="c:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\TC_1111_loop.robot">
-<test id="s1-t1" name="TC_1111 Variable loop testing" line="9">
-<kw name=": FOR">
-<msg time="2024-01-25T04:43:19.161113" level="FAIL">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</msg>
-<arg>${i}</arg>
-<arg>IN RANGE</arg>
-<arg>1</arg>
-<arg>10</arg>
-<status status="FAIL" start="2024-01-25T04:43:19.161113" elapsed="0.004002">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T00:54:31.661667" rpa="false" schemaversion="5">
+<suite id="s1" name="Waits" source="c:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\Waits.robot">
+<test id="s1-t1" name="TC_001 Login Logout Functionality" line="10">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-01-26T00:54:32.031188" level="INFO">Opening browser 'Chrome' to base url 'https://www.thetestingworld.com/'.</msg>
+<arg>${var1}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-01-26T00:54:32.030676" elapsed="13.255568"/>
 </kw>
-<kw name="\">
-<arg>log to Console</arg>
-<arg>${i}</arg>
-<status status="NOT RUN" start="2024-01-25T04:43:19.166114" elapsed="0.000000"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-01-26T00:54:45.288242" elapsed="0.126555"/>
 </kw>
-<status status="FAIL" start="2024-01-25T04:43:19.160112" elapsed="0.006002">Support for the old FOR loop syntax has been removed. Replace ': FOR' with 'FOR', end the loop with 'END', and remove escaping backslashes.</status>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>VIDEOS</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-01-26T00:54:45.415797" elapsed="0.026999"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-01-26T00:54:45.443793" level="INFO">Double clicking element '//span[containes(text(),'VIDEOS ')]'.</msg>
+<msg time="2024-01-26T00:54:45.757793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-01-26T00:54:45.758791" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //span[containes(text(),'VIDEOS ')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[containes(text(),'VIDEOS ')]' is not a valid XPath expression.
+  (Session info: chrome=121.0.6167.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FC295E42+3538674]
+	(No symbol) [0x00007FF7FBEB4C02]
+	(No symbol) [0x00007FF7FBD65AEB]
+	(No symbol) [0x00007FF7FBD6AD39]
+	(No symbol) [0x00007FF7FBD6D150]
+	(No symbol) [0x00007FF7FBD6D210]
+	(No symbol) [0x00007FF7FBDABBBC]
+	(No symbol) [0x00007FF7FBDAC0CC]
+	(No symbol) [0x00007FF7FBDEE4A7]
+	(No symbol) [0x00007FF7FBDCF0EF]
+	(No symbol) [0x00007FF7FBDEBDE3]
+	(No symbol) [0x00007FF7FBDCEE53]
+	(No symbol) [0x00007FF7FBD9F514]
+	(No symbol) [0x00007FF7FBDA0631]
+	GetHandleVerifier [0x00007FF7FC2C6CAD+3738973]
+	GetHandleVerifier [0x00007FF7FC31C506+4089270]
+	GetHandleVerifier [0x00007FF7FC314823+4057299]
+	GetHandleVerifier [0x00007FF7FBFE5C49+720121]
+	(No symbol) [0x00007FF7FBEC126F]
+	(No symbol) [0x00007FF7FBEBC304]
+	(No symbol) [0x00007FF7FBEBC432]
+	(No symbol) [0x00007FF7FBEABD04]
+	BaseThreadInitThunk [0x00007FFDB90D7344+20]
+	RtlUserThreadStart [0x00007FFDB94226B1+33]
+</msg>
+<arg>//span[containes(text(),'VIDEOS ')]</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-01-26T00:54:45.442796" elapsed="0.324994">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //span[containes(text(),'VIDEOS ')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[containes(text(),'VIDEOS ')]' is not a valid XPath expression.
+  (Session info: chrome=121.0.6167.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FC295E42+3538674]
+	(No symbol) [0x00007FF7FBEB4C02]
+	(No symbol) [0x00007FF7FBD65AEB]
+	(No symbol) [0x00007FF7FBD6AD39]
+	(No symbol) [0x00007FF7FBD6D150]
+	(No symbol) [0x00007FF7FBD6D210]
+	(No symbol) [0x00007FF7FBDABBBC]
+	(No symbol) [0x00007FF7FBDAC0CC]
+	(No symbol) [0x00007FF7FBDEE4A7]
+	(No symbol) [0x00007FF7FBDCF0EF]
+	(No symbol) [0x00007FF7FBDEBDE3]
+	(No symbol) [0x00007FF7FBDCEE53]
+	(No symbol) [0x00007FF7FBD9F514]
+	(No symbol) [0x00007FF7FBDA0631]
+	GetHandleVerifier [0x00007FF7FC2C6CAD+3738973]
+	GetHandleVerifier [0x00007FF7FC31C506+4089270]
+	GetHandleVerifier [0x00007FF7FC314823+4057299]
+	GetHandleVerifier [0x00007FF7FBFE5C49+720121]
+	(No symbol) [0x00007FF7FBEC126F]
+	(No symbol) [0x00007FF7FBEBC304]
+	(No symbol) [0x00007FF7FBEBC432]
+	(No symbol) [0x00007FF7FBEABD04]
+	BaseThreadInitThunk [0x00007FFDB90D7344+20]
+	RtlUserThreadStart [0x00007FFDB94226B1+33]
+</status>
+</kw>
+<status status="FAIL" start="2024-01-26T00:54:32.029676" elapsed="13.739117">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //span[containes(text(),'VIDEOS ')] because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//span[containes(text(),'VIDEOS ')]' is not a valid XPath expression.
+  (Session info: chrome=121.0.6167.86); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FC295E42+3538674]
+	(No symbol) [0x00007FF7FBEB4C02]
+	(No symbol) [0x00007FF7FBD65AEB]
+	(No symbol) [0x00007FF7FBD6AD39]
+	(No symbol) [0x00007FF7FBD6D150]
+	(No symbol) [0x00007FF7FBD6D210]
+	(No symbol) [0x00007FF7FBDABBBC]
+	(No symbol) [0x00007FF7FBDAC0CC]
+	(No symbol) [0x00007FF7FBDEE4A7]
+	(No symbol) [0x00007FF7FBDCF0EF]
+	(No symbol) [0x00007FF7FBDEBDE3]
+	(No symbol) [0x00007FF7FBDCEE53]
+	(No symbol) [0x00007FF7FBD9F514]
+	(No symbol) [0x00007FF7FBDA0631]
+	GetHandleVerifier [0x00007FF7FC2C6CAD+3738973]
+	GetHandleVerifier [0x00007FF7FC31C506+4089270]
+	GetHandleVerifier [0x00007FF7FC314823+4057299]
+	GetHandleVerifier [0x00007FF7FBFE5C49+720121]
+	(No symbol) [0x00007FF7FBEC126F]
+	(No symbol) [0x00007FF7FBEBC304]
+	(No symbol) [0x00007FF7FBEBC432]
+	(No symbol) [0x00007FF7FBEABD04]
+	BaseThreadInitThunk [0x00007FFDB90D7344+20]
+	RtlUserThreadStart [0x00007FFDB94226B1+33]
+</status>
 </test>
-<status status="FAIL" start="2024-01-25T04:43:18.803098" elapsed="0.365015"/>
+<status status="FAIL" start="2024-01-26T00:54:31.668668" elapsed="14.106125"/>
 </suite>
 <statistics>
 <total>
@@ -26,7 +121,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="TC 1111 loop">TC 1111 loop</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Waits">Waits</stat>
 </suite>
 </statistics>
 <errors>
