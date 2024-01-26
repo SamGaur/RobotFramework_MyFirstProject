@@ -1,51 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T21:29:51.869483" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-01-26T21:43:41.855036" rpa="false" schemaversion="5">
 <suite id="s1" name="Element" source="C:\Users\samgaur\Robot Framework Projects\My First Project\TestCases\Element.robot">
 <test id="s1-t1" name="TestCaseElementLocatorTC" line="9">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-01-26T21:29:52.235384" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<msg time="2024-01-26T21:43:42.727094" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/text-box'.</msg>
 <arg>${URL}</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-01-26T21:29:52.235384" elapsed="12.843410"/>
+<status status="PASS" start="2024-01-26T21:43:42.726095" elapsed="20.949013"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-01-26T21:30:05.082796" elapsed="0.138991"/>
+<status status="PASS" start="2024-01-26T21:44:03.679101" elapsed="0.135017"/>
 </kw>
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>2seconds</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-01-26T21:30:05.224778" elapsed="0.002007"/>
+<status status="PASS" start="2024-01-26T21:44:03.817098" elapsed="0.000000"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-26T21:30:05.229777" level="INFO">Clicking element '//*[@id="userName"]'.</msg>
+<msg time="2024-01-26T21:44:03.819279" level="INFO">Clicking element '//*[@id="userName"]'.</msg>
 <arg>//*[@id="userName"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T21:30:05.228777" elapsed="4.159423"/>
+<status status="PASS" start="2024-01-26T21:44:03.818230" elapsed="4.135314"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-01-26T21:30:09.390215" level="INFO">Typing text 'Samiksha' into text field '//*[@id="userName"]'.</msg>
+<msg time="2024-01-26T21:44:07.955542" level="INFO">Typing text 'Samiksha' into text field '//*[@id="userName"]'.</msg>
 <arg>//*[@id="userName"]</arg>
 <arg>Samiksha</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T21:30:09.389206" elapsed="6.165479"/>
+<status status="PASS" start="2024-01-26T21:44:07.955542" elapsed="6.211179"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-26T21:30:15.557682" level="INFO">Clicking element '//*[@id='item-1']'.</msg>
+<msg time="2024-01-26T21:44:14.170758" level="INFO">Clicking element '//*[@id='item-1']'.</msg>
 <arg>//*[@id='item-1']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T21:30:15.557682" elapsed="4.123782"/>
+<status status="PASS" start="2024-01-26T21:44:14.169758" elapsed="4.124750"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-01-26T21:30:19.684466" level="INFO">Clicking element '//*[@class='rct-icon rct-icon-uncheck']'.</msg>
+<msg time="2024-01-26T21:44:18.296506" level="INFO">Clicking element '//*[@class='rct-icon rct-icon-uncheck']'.</msg>
 <arg>//*[@class='rct-icon rct-icon-uncheck']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-01-26T21:30:19.684466" elapsed="4.105322"/>
+<status status="PASS" start="2024-01-26T21:44:18.296506" elapsed="4.090635"/>
 </kw>
-<status status="PASS" start="2024-01-26T21:29:52.232385" elapsed="31.559405"/>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-01-26T21:44:22.390138" level="INFO">Verifying element 'xpath://div[@class='pattern-backgound playgound-header']/div[@class='main-header']' contains exact text 'Check Box'.</msg>
+<arg>xpath://div[@class='pattern-backgound playgound-header']/div[@class='main-header']</arg>
+<arg>Check Box</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-01-26T21:44:22.390138" elapsed="4.049029"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Check Box is present on the page.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-01-26T21:44:26.441146" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-01-26T21:43:42.724094" elapsed="43.721052"/>
 </test>
-<status status="PASS" start="2024-01-26T21:29:51.872482" elapsed="31.922306"/>
+<status status="PASS" start="2024-01-26T21:43:41.861036" elapsed="44.585109"/>
 </suite>
 <statistics>
 <total>
